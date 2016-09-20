@@ -5,6 +5,7 @@ import android.support.v4.content.AsyncTaskLoader;
 import android.util.Log;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Zohaib on 20/09/16.
@@ -24,6 +25,7 @@ public class NewsLoader extends AsyncTaskLoader<List<News>> {
         if (urls[0] == null || urls.length < 1) {
             return null;
         }
+
         String newsData = QueryUtils.fetchNewsData(urls[0]);
 
         Log.v("QueryUtils.java", "Fetched data: " + newsData);
