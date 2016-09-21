@@ -22,7 +22,7 @@ public class NewsActivity extends AppCompatActivity
     private ProgressBar progressBar;
     private TextView emptyTextView;
     private static final String GUARDIAN_REQUEST_URL
-            = "http://content.guardianapis.com/search?q=debates&api-key=test";
+            = "http://content.guardianapis.com/search?q=debates&api-key=test&show-tags=contributor";
     private NewsAdapter adapter;
 
     @Override

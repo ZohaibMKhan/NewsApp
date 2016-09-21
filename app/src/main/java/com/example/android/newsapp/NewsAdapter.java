@@ -34,9 +34,11 @@ public class NewsAdapter extends ArrayAdapter<News> {
 
         TextView title = (TextView) listItemView.findViewById(R.id.title);
         TextView sectionName = (TextView) listItemView.findViewById(R.id.sectionName);
+        TextView author = (TextView) listItemView.findViewById(R.id.author);
 
         title.setText(currentNewsItem.getTitle());
         sectionName.setText(currentNewsItem.getSectionName());
+        author.setText(currentNewsItem.getAuthor());
 
         View.OnClickListener newsItemListener = new View.OnClickListener() {
             @Override

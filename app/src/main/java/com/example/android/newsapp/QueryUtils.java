@@ -115,8 +115,9 @@ public final class QueryUtils {
                 JSONObject article = results.getJSONObject(i);
                 String title = article.getString("webTitle");
                 String sectionName = article.getString("sectionName");
+                String author = article.getJSONArray("tags").getJSONObject(0).getString("webTitle");
                 String url = article.getString("webUrl");
-                newsList.add(new News(title, sectionName, url));
+                newsList.add(new News(title, author, sectionName, url));
             }
             // Return the list of News
             return newsList;
