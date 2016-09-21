@@ -18,10 +18,7 @@ import java.util.ArrayList;
  * Created by Zohaib on 20/09/16.
  */
 public final class QueryUtils {
-
-    public QueryUtils() {
-    }
-
+    
     /**
      * Query the USGS dataset and return a {@link String} to represent the JSON.
      */
